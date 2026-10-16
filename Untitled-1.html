@@ -1,0 +1,45 @@
+<div id="loginPage" style="
+  position:fixed; inset:0; background:#f4f7fb;
+  display:flex; justify-content:center; align-items:center;
+  z-index:9999; font-family:Arial,sans-serif;">
+
+  <div style="
+    background:white; padding:30px; width:340px;
+    border-radius:15px; box-shadow:0 5px 25px #0002;">
+
+    <h2 style="color:#10213f;text-align:center">
+      Nexvora Login
+    </h2>
+
+    <label>Select Role</label>
+    <select id="role" style="width:100%;padding:10px;margin:8px 0">
+      <option value="Client">Client</option>
+      <option value="Manager">Manager</option>
+      <option value="Team Leader">Team Leader</option>
+      <option value="Developer">Developer</option>
+      <option value="Director">Director</option>
+    </select>
+
+    <label>Email</label>
+    <input id="email" type="email" required
+      placeholder="Enter your email"
+      style="width:100%;padding:10px;margin:8px 0;
+      box-sizing:border-box">
+
+    <label>Password</label>
+    <input id="password" type="password" required
+      placeholder="Enter your password"
+      style="width:100%;padding:10px;margin:8px 0;
+      box-sizing:border-box">
+
+    <p id="error" style="color:red;font-size:13px"></p>
+
+    <button onclick="login()" style="
+      width:100%;background:#3867e8;color:white;
+      padding:12px;border:0;border-radius:8px">
+      Login
+    </button>
+  </div>
+</div> 
+  
+ 
